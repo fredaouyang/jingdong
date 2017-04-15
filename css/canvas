@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="mycanvas">
+	</canvas>
+</body>
+<script>
+	var mycanvas=document.getElementById("mycanvas");
+	var mycontext=mycanvas.getContext("2d");
+	mycontext.beginPath();
+	mycontext.moveTo(20,10);
+	mycontext.lineTo(80,35);
+	mycontext.strokeStyle="#000";
+	mycontext.stroke();
+	mycontext.beginPath();
+	mycontext.arc(80,35,20,20,Math.PI*5,true);
+	mycontext.fillStyle="#f00";
+	mycontext.fill();
+</script>
+</html>
